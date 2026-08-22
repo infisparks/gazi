@@ -83,21 +83,19 @@
 
     <!-- Top Header Bar (Ultra-Compact Mobile Design with Integrated Logo) -->
     <header class="bg-brand-800 text-white sticky top-0 z-40 shadow-md border-b border-brand-700/80">
-        <div class="max-w-xl mx-auto px-3 py-2 flex items-center justify-between gap-2">
-            <div class="flex items-center gap-2 min-w-0">
-                <!-- Premium Transparent Logo Display -->
+        <div class="max-w-xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+            <div class="flex items-center gap-3 min-w-0">
+                <!-- Large Prominent Header Logo -->
                 <div class="shrink-0 flex items-center">
                     <img src="https://i.ibb.co/qLsrvH4m/Chat-GPT-Image-Aug-22-2026-08-49-52-PM.png" 
                          alt="Gazi Wellness Logo" 
                          onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCDtoXkbURLQiABoBaRiNzGAamrfSEP-pPOun7raZATrIne3dI5PfXGeg&s=10'"
-                         class="h-7 sm:h-9 w-auto object-contain">
+                         class="h-10 sm:h-12 w-auto object-contain">
                 </div>
             </div>
-            <!-- Compact Language Switcher Button -->
-            <button onclick="toggleLanguage()" id="langBtn" class="shrink-0 text-[11px] bg-white/10 hover:bg-white/20 text-brand-100 px-2.5 py-1 rounded-lg font-medium transition border border-white/15 flex items-center gap-1">
-                <i class="fa-solid fa-language text-brand-200"></i>
-                <span id="langText">Hinglish</span>
-            </button>
+            <span class="text-[11px] font-semibold tracking-wide text-brand-200 uppercase bg-white/10 px-2.5 py-1 rounded-md border border-white/10">
+                Official Portal
+            </span>
         </div>
     </header>
 
@@ -108,48 +106,37 @@
         <div class="bg-white rounded-2xl shadow-lg border border-slate-200/80 overflow-hidden">
 
             <!-- Featured Large Brand Header Banner -->
-            <div class="bg-gradient-to-r from-brand-900 via-brand-800 to-brand-900 text-white px-4 py-3.5 flex flex-col gap-2 border-b border-brand-700">
-                <div class="flex items-center justify-between gap-3">
-                    <!-- Big Prominent Logo Display -->
-                    <img src="https://i.ibb.co/qLsrvH4m/Chat-GPT-Image-Aug-22-2026-08-49-52-PM.png" 
-                         alt="Gazi Wellness Private Limited" 
-                         onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCDtoXkbURLQiABoBaRiNzGAamrfSEP-pPOun7raZATrIne3dI5PfXGeg&s=10'"
-                         class="h-10 sm:h-12 w-auto max-w-[240px] sm:max-w-[280px] object-contain drop-shadow-sm">
-                    <span class="shrink-0 bg-emerald-500/20 border border-emerald-400/40 text-emerald-200 text-[10px] font-bold px-2.5 py-1 rounded-full backdrop-blur-xs flex items-center gap-1">
-                        <i class="fa-solid fa-leaf text-emerald-300"></i> 100% Pure
+            <div class="bg-gradient-to-r from-brand-900 via-brand-800 to-brand-900 text-white px-5 py-5 flex flex-col gap-3 border-b border-brand-700 text-center items-center">
+                <!-- Large & Prominent Logo Display -->
+                <img src="https://i.ibb.co/qLsrvH4m/Chat-GPT-Image-Aug-22-2026-08-49-52-PM.png" 
+                     alt="Gazi Wellness Private Limited" 
+                     onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCDtoXkbURLQiABoBaRiNzGAamrfSEP-pPOun7raZATrIne3dI5PfXGeg&s=10'"
+                     class="h-16 sm:h-20 w-auto max-w-full object-contain drop-shadow-md">
+                
+                <div class="flex flex-col items-center gap-1">
+                    <span class="text-xs sm:text-sm text-brand-200 font-bold uppercase tracking-wider">
+                        Distributor & Wholesalership Network
+                    </span>
+                    <span class="text-[11px] text-emerald-300 font-medium flex items-center gap-1">
+                        <i class="fa-solid fa-circle-check text-[10px]"></i> Official Partner Registration Portal
                     </span>
                 </div>
-                <div class="flex items-center justify-between text-[10px] sm:text-xs text-brand-200 font-medium">
-                    <span>Wholesalership & Retailership Network</span>
-                    <span class="text-emerald-300 font-semibold"><i class="fa-solid fa-circle-check text-[9px]"></i> Official Partner Portal</span>
-                </div>
             </div>
 
-            <!-- Compact Step Progress Indicator -->
-            <div class="px-4 pt-3.5 pb-1">
-                <div class="flex items-center justify-between mb-1.5 text-[11px] font-bold">
-                    <span id="stepTitle" class="uppercase tracking-wider text-brand-700">Step 1 of 2: Contact Info</span>
-                    <span id="stepPercent" class="text-slate-500">50% Completed</span>
-                </div>
-                <div class="w-full bg-slate-100 rounded-full h-1.5 overflow-hidden">
-                    <div id="progressBar" class="bg-brand-500 h-1.5 rounded-full transition-all duration-300 w-1/2"></div>
-                </div>
-            </div>
+            <!-- Unified Single Form Container -->
+            <form id="registrationForm" onsubmit="handleFormSubmit(event)" class="p-4 sm:p-6 space-y-5">
 
-            <!-- Form Container -->
-            <form id="registrationForm" onsubmit="handleFormSubmit(event)" class="p-4 sm:p-6 space-y-3.5">
-
-                <!-- STEP 1: CONTACT INFORMATION -->
-                <div id="step1" class="space-y-3.5">
+                <!-- SECTION 1: CONTACT INFORMATION -->
+                <div class="space-y-3.5">
                     
                     <!-- Section Header -->
-                    <div class="pb-1 border-b border-slate-100">
-                        <h2 class="text-sm font-bold text-slate-900 flex items-center gap-2" id="contactHeader">
+                    <div class="pb-2 border-b border-slate-200">
+                        <h2 class="text-sm font-bold text-slate-900 flex items-center gap-2">
                             <i class="fa-solid fa-user-circle text-brand-600 text-base"></i>
                             <span>Contact Information</span>
                         </h2>
-                        <p class="text-[11px] text-slate-500 leading-snug mt-1" id="contactSubtext">
-                            Wholesalership / Retailership Opportunities, Exclusive Offers aur Updates ke liye details bharein.
+                        <p class="text-[11px] text-slate-500 leading-snug mt-1">
+                            Please provide your details for Distributor & Wholesalership opportunities, exclusive offers, and business updates.
                         </p>
                     </div>
 
@@ -192,8 +179,8 @@
                             <span class="pl-2.5 text-slate-400 text-xs"><i class="fa-regular fa-envelope"></i></span>
                             <input type="email" id="email" required placeholder="Email address" class="w-full py-2 px-2 bg-transparent text-xs text-slate-900 focus:outline-none font-medium">
                         </div>
-                        <p class="text-[10px] text-slate-500 mt-0.5 flex items-center gap-1" id="emailHelp">
-                            <i class="fa-solid fa-circle-info text-brand-500"></i> Business updates is email par milenge.
+                        <p class="text-[10px] text-slate-500 mt-0.5 flex items-center gap-1">
+                            <i class="fa-solid fa-circle-info text-brand-500"></i> Business communications and invoices will be sent to this email.
                         </p>
                     </div>
 
@@ -201,14 +188,10 @@
                     <div class="grid grid-cols-2 gap-2.5 pt-0.5">
                         <!-- Postal Code -->
                         <div>
-                            <label class="block text-[11px] font-semibold text-slate-700 mb-1">Pin Code <span class="text-red-500">*</span></label>
-                            <div class="flex gap-1">
-                                <div class="w-10 rounded-lg border border-slate-300 bg-slate-50 flex items-center justify-center text-[10px] font-bold text-slate-700 shrink-0">
-                                    IN
-                                </div>
-                                <div class="flex-1 relative rounded-lg border border-slate-300 bg-white input-field flex items-center">
-                                    <input type="text" id="postalCode" maxlength="6" oninput="autoFillPincode(this.value)" required placeholder="PIN code" class="w-full py-2 px-2 bg-transparent text-xs text-slate-900 focus:outline-none font-medium">
-                                </div>
+                            <label class="block text-[11px] font-semibold text-slate-700 mb-1">Postal Code <span class="text-red-500">*</span></label>
+                            <div class="relative rounded-lg border border-slate-300 bg-white input-field flex items-center">
+                                <span class="pl-2.5 text-slate-400 text-xs"><i class="fa-solid fa-location-dot"></i></span>
+                                <input type="text" id="postalCode" maxlength="10" oninput="autoFillPincode(this.value)" required placeholder="Postal code" class="w-full py-2 px-2 bg-transparent text-xs text-slate-900 focus:outline-none font-medium">
                             </div>
                         </div>
 
@@ -243,18 +226,10 @@
                         </div>
                     </div>
 
-                    <!-- Step 1 Next Button -->
-                    <div class="pt-2">
-                        <button type="button" onclick="goToStep2()" class="w-full bg-brand-700 hover:bg-brand-800 active:bg-brand-900 text-white font-bold py-3 px-4 rounded-xl shadow-md shadow-brand-700/20 transition duration-150 flex items-center justify-center gap-2 text-sm">
-                            <span>Continue to Product Interest</span>
-                            <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </button>
-                    </div>
-
                 </div>
 
-                <!-- STEP 2: BUSINESS & TALBINA PRODUCT INTEREST (Initially Hidden) -->
-                <div id="step2" class="space-y-3.5 hidden">
+                <!-- SECTION 2: BUSINESS & TALBINA PRODUCT INTEREST -->
+                <div class="space-y-3.5 pt-2 border-t border-slate-100">
 
                     <div class="pb-1 border-b border-slate-100">
                         <h2 class="text-sm font-bold text-slate-900 flex items-center gap-2">
@@ -269,8 +244,15 @@
                         <label class="block text-[11px] font-semibold text-slate-700 mb-1.5">Applying as: <span class="text-red-500">*</span></label>
                         <div class="grid grid-cols-2 gap-2">
                             <label class="partner-type-card cursor-pointer rounded-lg border-2 border-brand-500 bg-brand-50/50 p-2 flex flex-col items-center text-center transition">
-                                <input type="radio" name="partnerType" value="Wholesaler" checked class="sr-only" onchange="updatePartnerSelection(this)">
-                                <i class="fa-solid fa-boxes-packing text-brand-600 text-base mb-0.5"></i>
+                                <input type="radio" name="partnerType" value="Distributor" checked class="sr-only" onchange="updatePartnerSelection(this)">
+                                <i class="fa-solid fa-truck-ramp-box text-brand-600 text-base mb-0.5"></i>
+                                <span class="text-xs font-bold text-slate-900">Distributor</span>
+                                <span class="text-[9px] text-slate-500">City Rights</span>
+                            </label>
+
+                            <label class="partner-type-card cursor-pointer rounded-lg border-2 border-slate-200 bg-white p-2 flex flex-col items-center text-center transition hover:border-slate-300">
+                                <input type="radio" name="partnerType" value="Wholesaler" class="sr-only" onchange="updatePartnerSelection(this)">
+                                <i class="fa-solid fa-boxes-packing text-slate-600 text-base mb-0.5"></i>
                                 <span class="text-xs font-bold text-slate-900">Wholesaler</span>
                                 <span class="text-[9px] text-slate-500">Bulk Stock</span>
                             </label>
@@ -280,13 +262,6 @@
                                 <i class="fa-solid fa-shop text-slate-600 text-base mb-0.5"></i>
                                 <span class="text-xs font-bold text-slate-900">Retailer</span>
                                 <span class="text-[9px] text-slate-500">Shop Counter</span>
-                            </label>
-
-                            <label class="partner-type-card cursor-pointer rounded-lg border-2 border-slate-200 bg-white p-2 flex flex-col items-center text-center transition hover:border-slate-300">
-                                <input type="radio" name="partnerType" value="Distributor" class="sr-only" onchange="updatePartnerSelection(this)">
-                                <i class="fa-solid fa-truck-ramp-box text-slate-600 text-base mb-0.5"></i>
-                                <span class="text-xs font-bold text-slate-900">Distributor</span>
-                                <span class="text-[9px] text-slate-500">City Rights</span>
                             </label>
 
                             <label class="partner-type-card cursor-pointer rounded-lg border-2 border-slate-200 bg-white p-2 flex flex-col items-center text-center transition hover:border-slate-300">
@@ -339,12 +314,9 @@
                         </select>
                     </div>
 
-                    <!-- Step 2 Buttons Grid -->
-                    <div class="pt-2 flex gap-2">
-                        <button type="button" onclick="goToStep1()" class="w-1/3 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold py-3 px-3 rounded-xl transition text-xs flex items-center justify-center gap-1">
-                            <i class="fa-solid fa-arrow-left text-[10px]"></i> Back
-                        </button>
-                        <button type="submit" class="w-2/3 bg-brand-700 hover:bg-brand-800 active:bg-brand-900 text-white font-bold py-3 px-4 rounded-xl shadow-md shadow-brand-700/20 transition duration-150 flex items-center justify-center gap-1.5 text-sm">
+                    <!-- Submit Button -->
+                    <div class="pt-3">
+                        <button type="submit" class="w-full bg-brand-700 hover:bg-brand-800 active:bg-brand-900 text-white font-bold py-3.5 px-4 rounded-xl shadow-md shadow-brand-700/20 transition duration-150 flex items-center justify-center gap-2 text-sm">
                             <i class="fa-solid fa-paper-plane text-xs"></i>
                             <span>Submit Application</span>
                         </button>
@@ -355,27 +327,27 @@
             </form>
 
             <!-- SUCCESS STATE SCREEN -->
-            <div id="successCard" class="p-5 text-center space-y-3 hidden">
-                <div class="w-12 h-12 bg-brand-100 text-brand-600 rounded-full flex items-center justify-center mx-auto text-xl shadow-inner">
+            <div id="successCard" class="p-6 text-center space-y-4 hidden">
+                <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-full flex items-center justify-center mx-auto text-2xl shadow-inner">
                     <i class="fa-solid fa-circle-check"></i>
                 </div>
                 <div>
-                    <h2 class="text-lg font-extrabold text-slate-900">Registration Successful!</h2>
-                    <p class="text-xs text-slate-600 mt-0.5">
-                        Aapki application <strong>Gazi Wellness Private Limited</strong> ko submit ho gayi hai.
+                    <h2 class="text-xl font-extrabold text-slate-900">Registration Successful!</h2>
+                    <p class="text-xs text-slate-600 mt-1">
+                        Your application has been submitted to <strong>Gazi Wellness Private Limited</strong>.
                     </p>
                 </div>
 
-                <div class="bg-slate-50 border border-slate-200 rounded-xl p-3 text-left space-y-1.5 text-xs">
-                    <div class="flex justify-between border-b pb-1 border-slate-200">
+                <div class="bg-slate-50 border border-slate-200 rounded-xl p-3.5 text-left space-y-2 text-xs">
+                    <div class="flex justify-between border-b pb-1.5 border-slate-200">
                         <span class="text-slate-500">Applicant:</span>
                         <span id="resName" class="font-bold text-slate-800">-</span>
                     </div>
-                    <div class="flex justify-between border-b pb-1 border-slate-200">
+                    <div class="flex justify-between border-b pb-1.5 border-slate-200">
                         <span class="text-slate-500">Mobile:</span>
                         <span id="resPhone" class="font-bold text-slate-800">-</span>
                     </div>
-                    <div class="flex justify-between border-b pb-1 border-slate-200">
+                    <div class="flex justify-between border-b pb-1.5 border-slate-200">
                         <span class="text-slate-500">Category:</span>
                         <span id="resType" class="font-bold text-brand-700">-</span>
                     </div>
@@ -386,8 +358,8 @@
                 </div>
 
                 <div class="pt-1 flex flex-col gap-2">
-                    <a href="https://wa.me/?text=Hello%20Gazi%20Wellness%20Team,%20I%20have%20submitted%20my%20registration%20form." target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 px-3 rounded-xl transition text-xs flex items-center justify-center gap-2">
-                        <i class="fa-brands fa-whatsapp text-sm"></i> Connect on WhatsApp
+                    <a href="https://wa.me/?text=Hello%20Gazi%20Wellness%20Team,%20I%20have%20submitted%20my%20registration%20form." target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-xl transition text-xs flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-base"></i> Connect on WhatsApp
                     </a>
                     <button onclick="window.location.reload()" class="w-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold py-2.5 px-3 rounded-xl transition text-xs">
                         Register Another Account
@@ -408,39 +380,9 @@
     </main>
 
     <script>
-        // Language texts dictionary
-        let currentLang = 'hinglish';
-
-        const textDict = {
-            hinglish: {
-                contactHeader: "Contact Information",
-                contactSubtext: "Wholesalership / Retailership Opportunities, Exclusive Offers aur Updates ke liye details bharein.",
-                btnLang: "Hinglish"
-            },
-            english: {
-                contactHeader: "Contact Information",
-                contactSubtext: "Fill out your details to receive Wholesalership / Retailership Opportunities and official updates.",
-                btnLang: "English"
-            }
-        };
-
-        function toggleLanguage() {
-            if (currentLang === 'hinglish') {
-                currentLang = 'english';
-                document.getElementById('contactHeader').querySelector('span').innerText = textDict.english.contactHeader;
-                document.getElementById('contactSubtext').innerText = textDict.english.contactSubtext;
-                document.getElementById('langText').innerText = textDict.english.btnLang;
-            } else {
-                currentLang = 'hinglish';
-                document.getElementById('contactHeader').querySelector('span').innerText = textDict.hinglish.contactHeader;
-                document.getElementById('contactSubtext').innerText = textDict.hinglish.contactSubtext;
-                document.getElementById('langText').innerText = textDict.hinglish.btnLang;
-            }
-        }
-
-        // Auto-fill city/state based on Indian PIN codes (Simulated lookup)
+        // Auto-fill city/state based on Postal Codes
         function autoFillPincode(pin) {
-            if (pin.length === 6) {
+            if (pin.length >= 6) {
                 const sampleMap = {
                     '400001': { city: 'Mumbai', state: 'Maharashtra' },
                     '110001': { city: 'New Delhi', state: 'Delhi' },
@@ -456,46 +398,8 @@
                 if (sampleMap[pin]) {
                     document.getElementById('city').value = sampleMap[pin].city;
                     document.getElementById('state').value = sampleMap[pin].state;
-                } else if (!document.getElementById('city').value) {
-                    // Fallback default placeholder logic if pincode is valid format
-                    document.getElementById('city').value = 'Local City';
-                    document.getElementById('state').value = 'State Region';
                 }
             }
-        }
-
-        // Navigation between steps
-        function goToStep2() {
-            const firstName = document.getElementById('firstName').value.trim();
-            const lastName = document.getElementById('lastName').value.trim();
-            const mobile = document.getElementById('mobileNumber').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const postal = document.getElementById('postalCode').value.trim();
-
-            if (!firstName || !lastName || !mobile || !email || !postal) {
-                showToast("Please fill in all mandatory contact fields before continuing.");
-                return;
-            }
-
-            document.getElementById('step1').classList.add('hidden');
-            document.getElementById('step2').classList.remove('hidden');
-
-            document.getElementById('stepTitle').innerText = "Step 2 of 2: Business & Product Interest";
-            document.getElementById('stepPercent').innerText = "100% Completed";
-            document.getElementById('progressBar').classList.remove('w-1/2');
-            document.getElementById('progressBar').classList.add('w-full');
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
-        function goToStep1() {
-            document.getElementById('step2').classList.add('hidden');
-            document.getElementById('step1').classList.remove('hidden');
-
-            document.getElementById('stepTitle').innerText = "Step 1 of 2: Contact Information";
-            document.getElementById('stepPercent').innerText = "50% Completed";
-            document.getElementById('progressBar').classList.remove('w-full');
-            document.getElementById('progressBar').classList.add('w-1/2');
-            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         // Card Radio Selection Styling update
@@ -521,7 +425,7 @@
             }
         }
 
-        // Custom Notification Toast instead of alert
+        // Custom Notification Toast
         function showToast(message) {
             const toast = document.createElement('div');
             toast.className = 'fixed bottom-5 left-1/2 -translate-x-1/2 bg-slate-900 text-white text-xs sm:text-sm font-semibold px-4 py-3 rounded-xl shadow-2xl z-50 flex items-center gap-2 border border-slate-700 transition duration-300';
@@ -540,7 +444,14 @@
             const firstName = document.getElementById('firstName').value.trim();
             const lastName = document.getElementById('lastName').value.trim();
             const mobile = document.getElementById('mobileNumber').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const postal = document.getElementById('postalCode').value.trim();
             const selectedType = document.querySelector('input[name="partnerType"]:checked').value;
+
+            if (!firstName || !lastName || !mobile || !email || !postal) {
+                showToast("Please fill in all mandatory fields.");
+                return;
+            }
 
             // Generate Random Ref Number
             const randomRef = 'GZW-' + Math.floor(100000 + Math.random() * 900000);
@@ -550,9 +461,8 @@
             document.getElementById('resType').innerText = selectedType;
             document.getElementById('resRef').innerText = randomRef;
 
-            // Hide Form & Progress, Show Success Screen
+            // Hide Form, Show Success Screen
             document.getElementById('registrationForm').classList.add('hidden');
-            document.getElementById('stepTitle').parentElement.parentElement.classList.add('hidden');
             document.getElementById('successCard').classList.remove('hidden');
 
             window.scrollTo({ top: 0, behavior: 'smooth' });
