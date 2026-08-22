@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Gazi Wellness Private Limited - Registration</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            500: '#00a859',
+                            600: '#008e4a',
+                            700: '#14532d',
+                            800: '#0f3a20',
+                            900: '#092314',
+                        },
+                        charcoal: '#333a42'
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f4f6f8;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #00a859;
+            border-radius: 4px;
+        }
+
+        /* Custom Focus Ring Styles */
+        .input-field {
+            transition: all 0.2s ease-in-out;
+        }
+        .input-field:focus-within {
+            border-color: #00a859;
+            box-shadow: 0 0 0 3px rgba(0, 168, 89, 0.15);
+        }
+
+        /* Custom Badge Animation */
+        @keyframes pulseGlow {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.03); opacity: 0.95; }
+        }
+        .pulse-badge {
+            animation: pulseGlow 3s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="min-h-screen text-slate-800 flex flex-col justify-between antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Top Header Bar (Ultra-Compact Mobile Design with Integrated Logo) -->
+    <header class="bg-brand-800 text-white sticky top-0 z-40 shadow-md border-b border-brand-700/80">
+        <div class="max-w-xl mx-auto px-3 py-2 flex items-center justify-between gap-2">
+            <div class="flex items-center gap-2 min-w-0">
+                <!-- Premium Transparent Logo Display -->
+                <div class="shrink-0 flex items-center">
+                    <img src="https://i.ibb.co/qLsrvH4m/Chat-GPT-Image-Aug-22-2026-08-49-52-PM.png" 
+                         alt="Gazi Wellness Logo" 
+                         onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCDtoXkbURLQiABoBaRiNzGAamrfSEP-pPOun7raZATrIne3dI5PfXGeg&s=10'"
+                         class="h-7 sm:h-9 w-auto object-contain">
+                </div>
+            </div>
+            <!-- Compact Language Switcher Button -->
+            <button onclick="toggleLanguage()" id="langBtn" class="shrink-0 text-[11px] bg-white/10 hover:bg-white/20 text-brand-100 px-2.5 py-1 rounded-lg font-medium transition border border-white/15 flex items-center gap-1">
+                <i class="fa-solid fa-language text-brand-200"></i>
+                <span id="langText">Hinglish</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Container (Tight Mobile Layout) -->
+    <main class="w-full max-w-xl mx-auto px-2.5 sm:px-4 py-3 sm:py-6 flex-1">
+
+        <!-- Main Card Wrapper -->
+        <div class="bg-white rounded-2xl shadow-lg border border-slate-200/80 overflow-hidden">
+
+            <!-- Featured Large Brand Header Banner -->
+            <div class="bg-gradient-to-r from-brand-900 via-brand-800 to-brand-900 text-white px-4 py-3.5 flex flex-col gap-2 border-b border-brand-700">
+                <div class="flex items-center justify-between gap-3">
+                    <!-- Big Prominent Logo Display -->
+                    <img src="https://i.ibb.co/qLsrvH4m/Chat-GPT-Image-Aug-22-2026-08-49-52-PM.png" 
+                         alt="Gazi Wellness Private Limited" 
+                         onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCDtoXkbURLQiABoBaRiNzGAamrfSEP-pPOun7raZATrIne3dI5PfXGeg&s=10'"
+                         class="h-10 sm:h-12 w-auto max-w-[240px] sm:max-w-[280px] object-contain drop-shadow-sm">
+                    <span class="shrink-0 bg-emerald-500/20 border border-emerald-400/40 text-emerald-200 text-[10px] font-bold px-2.5 py-1 rounded-full backdrop-blur-xs flex items-center gap-1">
+                        <i class="fa-solid fa-leaf text-emerald-300"></i> 100% Pure
+                    </span>
+                </div>
+                <div class="flex items-center justify-between text-[10px] sm:text-xs text-brand-200 font-medium">
+                    <span>Wholesalership & Retailership Network</span>
+                    <span class="text-emerald-300 font-semibold"><i class="fa-solid fa-circle-check text-[9px]"></i> Official Partner Portal</span>
+                </div>
+            </div>
+
+            <!-- Compact Step Progress Indicator -->
+            <div class="px-4 pt-3.5 pb-1">
+                <div class="flex items-center justify-between mb-1.5 text-[11px] font-bold">
+                    <span id="stepTitle" class="uppercase tracking-wider text-brand-700">Step 1 of 2: Contact Info</span>
+                    <span id="stepPercent" class="text-slate-500">50% Completed</span>
+                </div>
+                <div class="w-full bg-slate-100 rounded-full h-1.5 overflow-hidden">
+                    <div id="progressBar" class="bg-brand-500 h-1.5 rounded-full transition-all duration-300 w-1/2"></div>
+                </div>
+            </div>
+
+            <!-- Form Container -->
+            <form id="registrationForm" onsubmit="handleFormSubmit(event)" class="p-4 sm:p-6 space-y-3.5">
+
+                <!-- STEP 1: CONTACT INFORMATION -->
+                <div id="step1" class="space-y-3.5">
+                    
+                    <!-- Section Header -->
+                    <div class="pb-1 border-b border-slate-100">
+                        <h2 class="text-sm font-bold text-slate-900 flex items-center gap-2" id="contactHeader">
+                            <i class="fa-solid fa-user-circle text-brand-600 text-base"></i>
+                            <span>Contact Information</span>
+                        </h2>
+                        <p class="text-[11px] text-slate-500 leading-snug mt-1" id="contactSubtext">
+                            Wholesalership / Retailership Opportunities, Exclusive Offers aur Updates ke liye details bharein.
+                        </p>
+                    </div>
+
+                    <!-- First Name & Last Name Grid -->
+                    <div class="grid grid-cols-2 gap-2.5">
+                        <div>
+                            <label class="block text-[11px] font-semibold text-slate-700 mb-1">First Name <span class="text-red-500">*</span></label>
+                            <div class="relative rounded-lg border border-slate-300 bg-white input-field flex items-center">
+                                <span class="pl-2.5 text-slate-400 text-xs"><i class="fa-regular fa-user"></i></span>
+                                <input type="text" id="firstName" required placeholder="First name" class="w-full py-2 px-2 bg-transparent text-xs text-slate-900 focus:outline-none font-medium">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-[11px] font-semibold text-slate-700 mb-1">Last Name <span class="text-red-500">*</span></label>
+                            <div class="relative rounded-lg border border-slate-300 bg-white input-field flex items-center">
+                                <span class="pl-2.5 text-slate-400 text-xs"><i class="fa-regular fa-user"></i></span>
+                                <input type="text" id="lastName" required placeholder="Last name" class="w-full py-2 px-2 bg-transparent text-xs text-slate-900 focus:outline-none font-medium">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Number Field -->
+                    <div>
+                        <label class="block text-[11px] font-semibold text-slate-700 mb-1">Mobile Number <span class="text-red-500">*</span></label>
+                        <div class="flex gap-1.5">
+                            <div class="w-20 rounded-lg border border-slate-300 bg-slate-50 flex items-center justify-center text-xs font-bold text-slate-800 shrink-0">
+                                <span class="mr-1">🇮🇳</span> +91
+                            </div>
+                            <div class="flex-1 rounded-lg border border-slate-300 bg-white input-field flex items-center">
+                                <span class="pl-2.5 text-slate-400 text-xs"><i class="fa-solid fa-phone"></i></span>
+                                <input type="tel" id="mobileNumber" maxlength="10" pattern="[0-9]{10}" required placeholder="10-digit mobile number" class="w-full py-2 px-2 bg-transparent text-xs text-slate-900 focus:outline-none font-medium">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Email Field -->
+                    <div>
+                        <label class="block text-[11px] font-semibold text-slate-700 mb-1">Email Address <span class="text-red-500">*</span></label>
+                        <div class="relative rounded-lg border border-slate-300 bg-white input-field flex items-center">
+                            <span class="pl-2.5 text-slate-400 text-xs"><i class="fa-regular fa-envelope"></i></span>
+                            <input type="email" id="email" required placeholder="Email address" class="w-full py-2 px-2 bg-transparent text-xs text-slate-900 focus:outline-none font-medium">
+                        </div>
+                        <p class="text-[10px] text-slate-500 mt-0.5 flex items-center gap-1" id="emailHelp">
+                            <i class="fa-solid fa-circle-info text-brand-500"></i> Business updates is email par milenge.
+                        </p>
+                    </div>
+
+                    <!-- Address Location Fields -->
+                    <div class="grid grid-cols-2 gap-2.5 pt-0.5">
+                        <!-- Postal Code -->
+                        <div>
+                            <label class="block text-[11px] font-semibold text-slate-700 mb-1">Pin Code <span class="text-red-500">*</span></label>
+                            <div class="flex gap-1">
+                                <div class="w-10 rounded-lg border border-slate-300 bg-slate-50 flex items-center justify-center text-[10px] font-bold text-slate-700 shrink-0">
+                                    IN
+                                </div>
+                                <div class="flex-1 relative rounded-lg border border-slate-300 bg-white input-field flex items-center">
+                                    <input type="text" id="postalCode" maxlength="6" oninput="autoFillPincode(this.value)" required placeholder="PIN code" class="w-full py-2 px-2 bg-transparent text-xs text-slate-900 focus:outline-none font-medium">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- City -->
+                        <div>
+                            <label class="block text-[11px] font-semibold text-slate-700 mb-1">City <span class="text-red-500">*</span></label>
+                            <div class="relative rounded-lg border border-slate-300 bg-white input-field flex items-center">
+                                <input type="text" id="city" required placeholder="City" class="w-full py-2 px-2.5 bg-transparent text-xs text-slate-900 focus:outline-none font-medium">
+                            </div>
+                        </div>
+
+                        <!-- State -->
+                        <div>
+                            <label class="block text-[11px] font-semibold text-slate-700 mb-1">State <span class="text-red-500">*</span></label>
+                            <div class="relative rounded-lg border border-slate-300 bg-white input-field flex items-center">
+                                <input type="text" id="state" required placeholder="State" class="w-full py-2 px-2.5 bg-transparent text-xs text-slate-900 focus:outline-none font-medium">
+                            </div>
+                        </div>
+
+                        <!-- Country Dropdown -->
+                        <div>
+                            <label class="block text-[11px] font-semibold text-slate-700 mb-1">Country <span class="text-red-500">*</span></label>
+                            <div class="relative rounded-lg border border-slate-300 bg-white input-field flex items-center">
+                                <select id="country" class="w-full py-2 px-2 bg-transparent text-xs text-slate-900 focus:outline-none font-medium appearance-none">
+                                    <option value="India" selected>India</option>
+                                    <option value="UAE">UAE</option>
+                                    <option value="Saudi Arabia">Saudi Arabia</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <span class="pr-2 text-slate-400 pointer-events-none text-[10px]"><i class="fa-solid fa-chevron-down"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 1 Next Button -->
+                    <div class="pt-2">
+                        <button type="button" onclick="goToStep2()" class="w-full bg-brand-700 hover:bg-brand-800 active:bg-brand-900 text-white font-bold py-3 px-4 rounded-xl shadow-md shadow-brand-700/20 transition duration-150 flex items-center justify-center gap-2 text-sm">
+                            <span>Continue to Product Interest</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- STEP 2: BUSINESS & TALBINA PRODUCT INTEREST (Initially Hidden) -->
+                <div id="step2" class="space-y-3.5 hidden">
+
+                    <div class="pb-1 border-b border-slate-100">
+                        <h2 class="text-sm font-bold text-slate-900 flex items-center gap-2">
+                            <i class="fa-solid fa-store text-brand-600"></i>
+                            <span>Partner & Product Selection</span>
+                        </h2>
+                        <p class="text-[11px] text-slate-500">Choose partnership type and required Gazi Talbina quantities.</p>
+                    </div>
+
+                    <!-- Partnership Type Cards (Compact Grid) -->
+                    <div>
+                        <label class="block text-[11px] font-semibold text-slate-700 mb-1.5">Applying as: <span class="text-red-500">*</span></label>
+                        <div class="grid grid-cols-2 gap-2">
+                            <label class="partner-type-card cursor-pointer rounded-lg border-2 border-brand-500 bg-brand-50/50 p-2 flex flex-col items-center text-center transition">
+                                <input type="radio" name="partnerType" value="Wholesaler" checked class="sr-only" onchange="updatePartnerSelection(this)">
+                                <i class="fa-solid fa-boxes-packing text-brand-600 text-base mb-0.5"></i>
+                                <span class="text-xs font-bold text-slate-900">Wholesaler</span>
+                                <span class="text-[9px] text-slate-500">Bulk Stock</span>
+                            </label>
+
+                            <label class="partner-type-card cursor-pointer rounded-lg border-2 border-slate-200 bg-white p-2 flex flex-col items-center text-center transition hover:border-slate-300">
+                                <input type="radio" name="partnerType" value="Retailer" class="sr-only" onchange="updatePartnerSelection(this)">
+                                <i class="fa-solid fa-shop text-slate-600 text-base mb-0.5"></i>
+                                <span class="text-xs font-bold text-slate-900">Retailer</span>
+                                <span class="text-[9px] text-slate-500">Shop Counter</span>
+                            </label>
+
+                            <label class="partner-type-card cursor-pointer rounded-lg border-2 border-slate-200 bg-white p-2 flex flex-col items-center text-center transition hover:border-slate-300">
+                                <input type="radio" name="partnerType" value="Distributor" class="sr-only" onchange="updatePartnerSelection(this)">
+                                <i class="fa-solid fa-truck-ramp-box text-slate-600 text-base mb-0.5"></i>
+                                <span class="text-xs font-bold text-slate-900">Distributor</span>
+                                <span class="text-[9px] text-slate-500">City Rights</span>
+                            </label>
+
+                            <label class="partner-type-card cursor-pointer rounded-lg border-2 border-slate-200 bg-white p-2 flex flex-col items-center text-center transition hover:border-slate-300">
+                                <input type="radio" name="partnerType" value="Direct Customer" class="sr-only" onchange="updatePartnerSelection(this)">
+                                <i class="fa-solid fa-bag-shopping text-slate-600 text-base mb-0.5"></i>
+                                <span class="text-xs font-bold text-slate-900">Direct Customer</span>
+                                <span class="text-[9px] text-slate-500">Personal Use</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Business / Shop Name -->
+                    <div>
+                        <label class="block text-[11px] font-semibold text-slate-700 mb-1">Shop / Business Name <span class="text-slate-400 font-normal">(Optional)</span></label>
+                        <div class="relative rounded-lg border border-slate-300 bg-white input-field flex items-center">
+                            <span class="pl-2.5 text-slate-400 text-xs"><i class="fa-solid fa-building-store"></i></span>
+                            <input type="text" id="firmName" placeholder="e.g. Gazi Health Center" class="w-full py-2 px-2 bg-transparent text-xs text-slate-900 focus:outline-none font-medium">
+                        </div>
+                    </div>
+
+                    <!-- Product Variants -->
+                    <div>
+                        <label class="block text-[11px] font-semibold text-slate-700 mb-1.5">Gazi Talbina Variants Needed: <span class="text-red-500">*</span></label>
+                        <div class="space-y-1.5">
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg border border-slate-200 bg-slate-50/50 cursor-pointer text-xs font-medium">
+                                <input type="checkbox" checked value="Gazi Talbina Special Dates & Honey" class="w-3.5 h-3.5 text-brand-600 rounded border-slate-300">
+                                <span class="text-slate-800 font-semibold">Gazi Talbina Dates & Honey Special</span>
+                            </label>
+
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg border border-slate-200 bg-slate-50/50 cursor-pointer text-xs font-medium">
+                                <input type="checkbox" checked value="Gazi Dry Fruit Premium Talbina" class="w-3.5 h-3.5 text-brand-600 rounded border-slate-300">
+                                <span class="text-slate-800 font-semibold">Gazi Dry Fruit Premium Talbina</span>
+                            </label>
+
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg border border-slate-200 bg-slate-50/50 cursor-pointer text-xs font-medium">
+                                <input type="checkbox" value="Gazi Chocolate & Elaichi Talbina" class="w-3.5 h-3.5 text-brand-600 rounded border-slate-300">
+                                <span class="text-slate-800 font-semibold">Gazi Chocolate & Elaichi Flavor</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Quantity Order -->
+                    <div>
+                        <label class="block text-[11px] font-semibold text-slate-700 mb-1">Expected First Order Quantity</label>
+                        <select id="orderQty" class="w-full py-2 px-2.5 rounded-lg border border-slate-300 bg-white text-xs text-slate-900 focus:outline-none font-medium">
+                            <option value="10-25 Kg (Sample Order)">10 - 25 Kg (Sample Order)</option>
+                            <option value="50-100 Kg (Standard Wholesale)">50 - 100 Kg (Standard Wholesale)</option>
+                            <option value="200+ Kg (Bulk Distributor)">200+ Kg (Bulk Commercial)</option>
+                            <option value="Personal / Family Pack">Personal / Family Pack (1-5 Kg)</option>
+                        </select>
+                    </div>
+
+                    <!-- Step 2 Buttons Grid -->
+                    <div class="pt-2 flex gap-2">
+                        <button type="button" onclick="goToStep1()" class="w-1/3 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold py-3 px-3 rounded-xl transition text-xs flex items-center justify-center gap-1">
+                            <i class="fa-solid fa-arrow-left text-[10px]"></i> Back
+                        </button>
+                        <button type="submit" class="w-2/3 bg-brand-700 hover:bg-brand-800 active:bg-brand-900 text-white font-bold py-3 px-4 rounded-xl shadow-md shadow-brand-700/20 transition duration-150 flex items-center justify-center gap-1.5 text-sm">
+                            <i class="fa-solid fa-paper-plane text-xs"></i>
+                            <span>Submit Application</span>
+                        </button>
+                    </div>
+
+                </div>
+
+            </form>
+
+            <!-- SUCCESS STATE SCREEN -->
+            <div id="successCard" class="p-5 text-center space-y-3 hidden">
+                <div class="w-12 h-12 bg-brand-100 text-brand-600 rounded-full flex items-center justify-center mx-auto text-xl shadow-inner">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div>
+                    <h2 class="text-lg font-extrabold text-slate-900">Registration Successful!</h2>
+                    <p class="text-xs text-slate-600 mt-0.5">
+                        Aapki application <strong>Gazi Wellness Private Limited</strong> ko submit ho gayi hai.
+                    </p>
+                </div>
+
+                <div class="bg-slate-50 border border-slate-200 rounded-xl p-3 text-left space-y-1.5 text-xs">
+                    <div class="flex justify-between border-b pb-1 border-slate-200">
+                        <span class="text-slate-500">Applicant:</span>
+                        <span id="resName" class="font-bold text-slate-800">-</span>
+                    </div>
+                    <div class="flex justify-between border-b pb-1 border-slate-200">
+                        <span class="text-slate-500">Mobile:</span>
+                        <span id="resPhone" class="font-bold text-slate-800">-</span>
+                    </div>
+                    <div class="flex justify-between border-b pb-1 border-slate-200">
+                        <span class="text-slate-500">Category:</span>
+                        <span id="resType" class="font-bold text-brand-700">-</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-slate-500">Ref ID:</span>
+                        <span id="resRef" class="font-mono font-bold text-slate-900">GZW-89210</span>
+                    </div>
+                </div>
+
+                <div class="pt-1 flex flex-col gap-2">
+                    <a href="https://wa.me/?text=Hello%20Gazi%20Wellness%20Team,%20I%20have%20submitted%20my%20registration%20form." target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 px-3 rounded-xl transition text-xs flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-sm"></i> Connect on WhatsApp
+                    </a>
+                    <button onclick="window.location.reload()" class="w-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold py-2.5 px-3 rounded-xl transition text-xs">
+                        Register Another Account
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer Trust Notice -->
+        <div class="text-center mt-3">
+            <p class="text-[10px] text-slate-500 flex items-center justify-center gap-1">
+                <i class="fa-solid fa-shield text-brand-600"></i>
+                <span>Gazi Wellness Private Limited &copy; 2026</span>
+            </p>
+        </div>
+
+    </main>
+
+    <script>
+        // Language texts dictionary
+        let currentLang = 'hinglish';
+
+        const textDict = {
+            hinglish: {
+                contactHeader: "Contact Information",
+                contactSubtext: "Wholesalership / Retailership Opportunities, Exclusive Offers aur Updates ke liye details bharein.",
+                btnLang: "Hinglish"
+            },
+            english: {
+                contactHeader: "Contact Information",
+                contactSubtext: "Fill out your details to receive Wholesalership / Retailership Opportunities and official updates.",
+                btnLang: "English"
+            }
+        };
+
+        function toggleLanguage() {
+            if (currentLang === 'hinglish') {
+                currentLang = 'english';
+                document.getElementById('contactHeader').querySelector('span').innerText = textDict.english.contactHeader;
+                document.getElementById('contactSubtext').innerText = textDict.english.contactSubtext;
+                document.getElementById('langText').innerText = textDict.english.btnLang;
+            } else {
+                currentLang = 'hinglish';
+                document.getElementById('contactHeader').querySelector('span').innerText = textDict.hinglish.contactHeader;
+                document.getElementById('contactSubtext').innerText = textDict.hinglish.contactSubtext;
+                document.getElementById('langText').innerText = textDict.hinglish.btnLang;
+            }
+        }
+
+        // Auto-fill city/state based on Indian PIN codes (Simulated lookup)
+        function autoFillPincode(pin) {
+            if (pin.length === 6) {
+                const sampleMap = {
+                    '400001': { city: 'Mumbai', state: 'Maharashtra' },
+                    '110001': { city: 'New Delhi', state: 'Delhi' },
+                    '560001': { city: 'Bengaluru', state: 'Karnataka' },
+                    '700001': { city: 'Kolkata', state: 'West Bengal' },
+                    '600001': { city: 'Chennai', state: 'Tamil Nadu' },
+                    '500001': { city: 'Hyderabad', state: 'Telangana' },
+                    '380001': { city: 'Ahmedabad', state: 'Gujarat' },
+                    '302001': { city: 'Jaipur', state: 'Rajasthan' },
+                    '226001': { city: 'Lucknow', state: 'Uttar Pradesh' }
+                };
+
+                if (sampleMap[pin]) {
+                    document.getElementById('city').value = sampleMap[pin].city;
+                    document.getElementById('state').value = sampleMap[pin].state;
+                } else if (!document.getElementById('city').value) {
+                    // Fallback default placeholder logic if pincode is valid format
+                    document.getElementById('city').value = 'Local City';
+                    document.getElementById('state').value = 'State Region';
+                }
+            }
+        }
+
+        // Navigation between steps
+        function goToStep2() {
+            const firstName = document.getElementById('firstName').value.trim();
+            const lastName = document.getElementById('lastName').value.trim();
+            const mobile = document.getElementById('mobileNumber').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const postal = document.getElementById('postalCode').value.trim();
+
+            if (!firstName || !lastName || !mobile || !email || !postal) {
+                showToast("Please fill in all mandatory contact fields before continuing.");
+                return;
+            }
+
+            document.getElementById('step1').classList.add('hidden');
+            document.getElementById('step2').classList.remove('hidden');
+
+            document.getElementById('stepTitle').innerText = "Step 2 of 2: Business & Product Interest";
+            document.getElementById('stepPercent').innerText = "100% Completed";
+            document.getElementById('progressBar').classList.remove('w-1/2');
+            document.getElementById('progressBar').classList.add('w-full');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function goToStep1() {
+            document.getElementById('step2').classList.add('hidden');
+            document.getElementById('step1').classList.remove('hidden');
+
+            document.getElementById('stepTitle').innerText = "Step 1 of 2: Contact Information";
+            document.getElementById('stepPercent').innerText = "50% Completed";
+            document.getElementById('progressBar').classList.remove('w-full');
+            document.getElementById('progressBar').classList.add('w-1/2');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Card Radio Selection Styling update
+        function updatePartnerSelection(radio) {
+            const cards = document.querySelectorAll('.partner-type-card');
+            cards.forEach(card => {
+                card.classList.remove('border-brand-500', 'bg-brand-50/50');
+                card.classList.add('border-slate-200', 'bg-white');
+                const icon = card.querySelector('i');
+                if (icon) {
+                    icon.classList.remove('text-brand-600');
+                    icon.classList.add('text-slate-600');
+                }
+            });
+
+            const selectedCard = radio.closest('.partner-type-card');
+            selectedCard.classList.remove('border-slate-200', 'bg-white');
+            selectedCard.classList.add('border-brand-500', 'bg-brand-50/50');
+            const icon = selectedCard.querySelector('i');
+            if (icon) {
+                icon.classList.remove('text-slate-600');
+                icon.classList.add('text-brand-600');
+            }
+        }
+
+        // Custom Notification Toast instead of alert
+        function showToast(message) {
+            const toast = document.createElement('div');
+            toast.className = 'fixed bottom-5 left-1/2 -translate-x-1/2 bg-slate-900 text-white text-xs sm:text-sm font-semibold px-4 py-3 rounded-xl shadow-2xl z-50 flex items-center gap-2 border border-slate-700 transition duration-300';
+            toast.innerHTML = `<i class="fa-solid fa-circle-exclamation text-amber-400"></i> <span>${message}</span>`;
+            document.body.appendChild(toast);
+            setTimeout(() => {
+                toast.classList.add('opacity-0');
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+
+        // Handle Final Form Submission
+        function handleFormSubmit(e) {
+            e.preventDefault();
+
+            const firstName = document.getElementById('firstName').value.trim();
+            const lastName = document.getElementById('lastName').value.trim();
+            const mobile = document.getElementById('mobileNumber').value.trim();
+            const selectedType = document.querySelector('input[name="partnerType"]:checked').value;
+
+            // Generate Random Ref Number
+            const randomRef = 'GZW-' + Math.floor(100000 + Math.random() * 900000);
+
+            document.getElementById('resName').innerText = `${firstName} ${lastName}`;
+            document.getElementById('resPhone').innerText = `+91 ${mobile}`;
+            document.getElementById('resType').innerText = selectedType;
+            document.getElementById('resRef').innerText = randomRef;
+
+            // Hide Form & Progress, Show Success Screen
+            document.getElementById('registrationForm').classList.add('hidden');
+            document.getElementById('stepTitle').parentElement.parentElement.classList.add('hidden');
+            document.getElementById('successCard').classList.remove('hidden');
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
